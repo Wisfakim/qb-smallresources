@@ -71,6 +71,12 @@ end
 
 exports('HasHarness', HasHarness)
 
+function HasSeatbelt()
+    return seatbeltOn
+end
+
+exports('HasSeatbelt', HasSeatbelt)
+
 -- Main Thread
 
 lib.onCache('vehicle', function()
